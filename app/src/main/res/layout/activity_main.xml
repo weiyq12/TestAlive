@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.zte.testalive.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="测试应用防杀防挂功能"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_start_gray_so"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动开源so库灰色保活"/>
+
+        <Button
+            android:id="@+id/btn_stop_gray_so"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消开源so库灰色保活"/>
+
+        <Button
+            android:id="@+id/btn_forground_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用前台服务"/>
+
+        <Button
+            android:id="@+id/btn_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用AlarmManager定期15分钟触发service"/>
+
+        <Button
+            android:id="@+id/btn_start_notification_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动NotificationListenerService"/>
+
+        <Button
+            android:id="@+id/btn_stop_notification_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="停止NotificationListenerService"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="监听系统IDLE状态变化广播"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="监听开关机广播"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不同应用间service绑定"/>
+
+    </LinearLayout>
+
+</LinearLayout>
